@@ -11,9 +11,9 @@
 ## 실습 및 과제 :
 0. 해당 조의 번역 부분을 확인하고 개인별로 과업을 나눕니다.
 
-1. 10minutes2pandas 리포를 클론합니다.
+1. 10minutes2pandas 리포를 Fork 하고 clone합니다.
 
-`git clone git@github.com:dataitgirls2/10minutes2pandas.git`
+`git clone git@github.com:자신의깃헙ID/10minutes2pandas.git`
 
 `cd 10minutes2pandas` 로 클론 받은 폴더로 이동합니다.
 
