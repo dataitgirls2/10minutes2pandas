@@ -15,7 +15,7 @@
 
 `git clone git@github.com:dataitgirls2/10minutes2pandas.git`
 
-`cd 10minutes2panda` 로 클론 받은 폴더로 이동합니다.
+`cd 10minutes2pandas` 로 클론 받은 폴더로 이동합니다.
 
 2. 조별로 브랜치를 생성해 놓았습니다. git checkout 조별브랜치명 1_0_to_22
 각자의 조별 브랜치로 이동합니다.
