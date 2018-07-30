@@ -6110,6 +6110,14 @@ if pd.Series([False, True, False]):
 
     ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
 
+이러한 경우에는, any(), all() or empty 등을 사용해서 무엇을 원하는지를 선택(반영)해주어야 합니다.
+
+
+```python
+if pd.Series([False, True, False])is not None:
+       print("I was not None")
+```
+
 
 설명과 무엇을 해야하는지에 대해서는 [비교](https://pandas.pydata.org/pandas-docs/stable/basics.html#basics-compare) 부분을 참조하세요.
 
