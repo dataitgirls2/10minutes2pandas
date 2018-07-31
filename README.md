@@ -93,17 +93,17 @@ df
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -119,45 +119,45 @@ df
   <tbody>
     <tr>
       <th>2013-01-01</th>
-      <td>-1.285004</td>
-      <td>-0.228990</td>
-      <td>-0.412877</td>
-      <td>-0.801001</td>
+      <td>1.203664</td>
+      <td>0.035199</td>
+      <td>-0.516512</td>
+      <td>-1.651954</td>
     </tr>
     <tr>
       <th>2013-01-02</th>
-      <td>-1.403231</td>
-      <td>-0.316784</td>
-      <td>0.791482</td>
-      <td>-0.699104</td>
+      <td>-0.935893</td>
+      <td>0.854944</td>
+      <td>-0.814971</td>
+      <td>-0.333447</td>
     </tr>
     <tr>
       <th>2013-01-03</th>
-      <td>0.812184</td>
-      <td>-0.117943</td>
-      <td>-0.394338</td>
-      <td>1.669255</td>
+      <td>-2.364223</td>
+      <td>-2.187468</td>
+      <td>1.018928</td>
+      <td>1.252907</td>
     </tr>
     <tr>
       <th>2013-01-04</th>
-      <td>0.834505</td>
-      <td>0.029459</td>
-      <td>0.543112</td>
-      <td>-1.471167</td>
+      <td>-2.214020</td>
+      <td>0.361885</td>
+      <td>-0.390074</td>
+      <td>-0.497004</td>
     </tr>
     <tr>
       <th>2013-01-05</th>
-      <td>0.646337</td>
-      <td>2.139297</td>
-      <td>-0.839317</td>
-      <td>0.107340</td>
+      <td>1.387345</td>
+      <td>-0.443100</td>
+      <td>-0.540677</td>
+      <td>-0.370186</td>
     </tr>
     <tr>
       <th>2013-01-06</th>
-      <td>1.766095</td>
-      <td>-0.026487</td>
-      <td>0.471119</td>
-      <td>0.227956</td>
+      <td>0.222998</td>
+      <td>-1.308863</td>
+      <td>0.433432</td>
+      <td>0.409407</td>
     </tr>
   </tbody>
 </table>
@@ -186,17 +186,17 @@ df2
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -277,7 +277,7 @@ df2.dtypes
 IPython을 이용하고 계시다면, (공용 속성을 포함한) 열 이름에 대한 Tap 자동완성 기능이 자동으로 활성화됩니다. <br>
 다음은 완성될 속성에 대한 부분집합(subset)입니다. 
 
-*역자 주 : 하기 코드의 경우, IPython이 아닌 환경(Google Colaboratory, Jupyter 등)에서는 사용이 불가능한 코드인 점에 주의하세요.*
+*역자 주 : 아래 제시된 코드의 경우, IPython이 아닌 환경(Google Colaboratory, Jupyter 등)에서는 사용이 불가능한 코드인 점에 주의하세요.*
 
 
 ```python
@@ -327,17 +327,17 @@ df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -353,38 +353,38 @@ df.head()
   <tbody>
     <tr>
       <th>2013-01-01</th>
-      <td>-1.285004</td>
-      <td>-0.228990</td>
-      <td>-0.412877</td>
-      <td>-0.801001</td>
+      <td>1.203664</td>
+      <td>0.035199</td>
+      <td>-0.516512</td>
+      <td>-1.651954</td>
     </tr>
     <tr>
       <th>2013-01-02</th>
-      <td>-1.403231</td>
-      <td>-0.316784</td>
-      <td>0.791482</td>
-      <td>-0.699104</td>
+      <td>-0.935893</td>
+      <td>0.854944</td>
+      <td>-0.814971</td>
+      <td>-0.333447</td>
     </tr>
     <tr>
       <th>2013-01-03</th>
-      <td>0.812184</td>
-      <td>-0.117943</td>
-      <td>-0.394338</td>
-      <td>1.669255</td>
+      <td>-2.364223</td>
+      <td>-2.187468</td>
+      <td>1.018928</td>
+      <td>1.252907</td>
     </tr>
     <tr>
       <th>2013-01-04</th>
-      <td>0.834505</td>
-      <td>0.029459</td>
-      <td>0.543112</td>
-      <td>-1.471167</td>
+      <td>-2.214020</td>
+      <td>0.361885</td>
+      <td>-0.390074</td>
+      <td>-0.497004</td>
     </tr>
     <tr>
       <th>2013-01-05</th>
-      <td>0.646337</td>
-      <td>2.139297</td>
-      <td>-0.839317</td>
-      <td>0.107340</td>
+      <td>1.387345</td>
+      <td>-0.443100</td>
+      <td>-0.540677</td>
+      <td>-0.370186</td>
     </tr>
   </tbody>
 </table>
@@ -401,17 +401,17 @@ df.tail(3)
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -427,24 +427,24 @@ df.tail(3)
   <tbody>
     <tr>
       <th>2013-01-04</th>
-      <td>0.834505</td>
-      <td>0.029459</td>
-      <td>0.543112</td>
-      <td>-1.471167</td>
+      <td>-2.214020</td>
+      <td>0.361885</td>
+      <td>-0.390074</td>
+      <td>-0.497004</td>
     </tr>
     <tr>
       <th>2013-01-05</th>
-      <td>0.646337</td>
-      <td>2.139297</td>
-      <td>-0.839317</td>
-      <td>0.107340</td>
+      <td>1.387345</td>
+      <td>-0.443100</td>
+      <td>-0.540677</td>
+      <td>-0.370186</td>
     </tr>
     <tr>
       <th>2013-01-06</th>
-      <td>1.766095</td>
-      <td>-0.026487</td>
-      <td>0.471119</td>
-      <td>0.227956</td>
+      <td>0.222998</td>
+      <td>-1.308863</td>
+      <td>0.433432</td>
+      <td>0.409407</td>
     </tr>
   </tbody>
 </table>
@@ -488,12 +488,12 @@ df.values
 
 
 
-    array([[-1.28500356, -0.22898951, -0.41287708, -0.80100137],
-           [-1.40323074, -0.31678423,  0.79148232, -0.69910393],
-           [ 0.81218429, -0.11794275, -0.39433788,  1.66925489],
-           [ 0.8345046 ,  0.02945914,  0.54311238, -1.47116727],
-           [ 0.64633697,  2.1392966 , -0.83931727,  0.1073402 ],
-           [ 1.76609548, -0.02648727,  0.47111932,  0.22795625]])
+    array([[ 1.20366414,  0.03519932, -0.51651206, -1.65195383],
+           [-0.93589333,  0.85494382, -0.81497074, -0.33344655],
+           [-2.36422326, -2.18746816,  1.01892836,  1.25290739],
+           [-2.21401998,  0.36188549, -0.390074  , -0.49700376],
+           [ 1.38734459, -0.44310022, -0.54067692, -0.37018639],
+           [ 0.22299798, -1.30886252,  0.43343249,  0.40940659]])
 
 
 
@@ -508,17 +508,17 @@ df.describe()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -541,52 +541,52 @@ df.describe()
     </tr>
     <tr>
       <th>mean</th>
-      <td>0.228481</td>
-      <td>0.246425</td>
-      <td>0.026530</td>
-      <td>-0.161120</td>
+      <td>-0.450022</td>
+      <td>-0.447900</td>
+      <td>-0.134979</td>
+      <td>-0.198379</td>
     </tr>
     <tr>
       <th>std</th>
-      <td>1.280621</td>
-      <td>0.936003</td>
-      <td>0.658721</td>
-      <td>1.094424</td>
+      <td>1.647755</td>
+      <td>1.127290</td>
+      <td>0.706005</td>
+      <td>0.972158</td>
     </tr>
     <tr>
       <th>min</th>
-      <td>-1.403231</td>
-      <td>-0.316784</td>
-      <td>-0.839317</td>
-      <td>-1.471167</td>
+      <td>-2.364223</td>
+      <td>-2.187468</td>
+      <td>-0.814971</td>
+      <td>-1.651954</td>
     </tr>
     <tr>
       <th>25%</th>
-      <td>-0.802168</td>
-      <td>-0.201228</td>
-      <td>-0.408242</td>
-      <td>-0.775527</td>
+      <td>-1.894488</td>
+      <td>-1.092422</td>
+      <td>-0.534636</td>
+      <td>-0.465299</td>
     </tr>
     <tr>
       <th>50%</th>
-      <td>0.729261</td>
-      <td>-0.072215</td>
-      <td>0.038391</td>
-      <td>-0.295882</td>
+      <td>-0.356448</td>
+      <td>-0.203950</td>
+      <td>-0.453293</td>
+      <td>-0.351816</td>
     </tr>
     <tr>
       <th>75%</th>
-      <td>0.828925</td>
-      <td>0.015473</td>
-      <td>0.525114</td>
-      <td>0.197802</td>
+      <td>0.958498</td>
+      <td>0.280214</td>
+      <td>0.227556</td>
+      <td>0.223693</td>
     </tr>
     <tr>
       <th>max</th>
-      <td>1.766095</td>
-      <td>2.139297</td>
-      <td>0.791482</td>
-      <td>1.669255</td>
+      <td>1.387345</td>
+      <td>0.854944</td>
+      <td>1.018928</td>
+      <td>1.252907</td>
     </tr>
   </tbody>
 </table>
@@ -605,17 +605,17 @@ df.T
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -633,39 +633,39 @@ df.T
   <tbody>
     <tr>
       <th>A</th>
-      <td>-1.285004</td>
-      <td>-1.403231</td>
-      <td>0.812184</td>
-      <td>0.834505</td>
-      <td>0.646337</td>
-      <td>1.766095</td>
+      <td>1.203664</td>
+      <td>-0.935893</td>
+      <td>-2.364223</td>
+      <td>-2.214020</td>
+      <td>1.387345</td>
+      <td>0.222998</td>
     </tr>
     <tr>
       <th>B</th>
-      <td>-0.228990</td>
-      <td>-0.316784</td>
-      <td>-0.117943</td>
-      <td>0.029459</td>
-      <td>2.139297</td>
-      <td>-0.026487</td>
+      <td>0.035199</td>
+      <td>0.854944</td>
+      <td>-2.187468</td>
+      <td>0.361885</td>
+      <td>-0.443100</td>
+      <td>-1.308863</td>
     </tr>
     <tr>
       <th>C</th>
-      <td>-0.412877</td>
-      <td>0.791482</td>
-      <td>-0.394338</td>
-      <td>0.543112</td>
-      <td>-0.839317</td>
-      <td>0.471119</td>
+      <td>-0.516512</td>
+      <td>-0.814971</td>
+      <td>1.018928</td>
+      <td>-0.390074</td>
+      <td>-0.540677</td>
+      <td>0.433432</td>
     </tr>
     <tr>
       <th>D</th>
-      <td>-0.801001</td>
-      <td>-0.699104</td>
-      <td>1.669255</td>
-      <td>-1.471167</td>
-      <td>0.107340</td>
-      <td>0.227956</td>
+      <td>-1.651954</td>
+      <td>-0.333447</td>
+      <td>1.252907</td>
+      <td>-0.497004</td>
+      <td>-0.370186</td>
+      <td>0.409407</td>
     </tr>
   </tbody>
 </table>
@@ -684,17 +684,17 @@ df.sort_index(axis=1, ascending=False)
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -710,45 +710,45 @@ df.sort_index(axis=1, ascending=False)
   <tbody>
     <tr>
       <th>2013-01-01</th>
-      <td>-0.801001</td>
-      <td>-0.412877</td>
-      <td>-0.228990</td>
-      <td>-1.285004</td>
+      <td>-1.651954</td>
+      <td>-0.516512</td>
+      <td>0.035199</td>
+      <td>1.203664</td>
     </tr>
     <tr>
       <th>2013-01-02</th>
-      <td>-0.699104</td>
-      <td>0.791482</td>
-      <td>-0.316784</td>
-      <td>-1.403231</td>
+      <td>-0.333447</td>
+      <td>-0.814971</td>
+      <td>0.854944</td>
+      <td>-0.935893</td>
     </tr>
     <tr>
       <th>2013-01-03</th>
-      <td>1.669255</td>
-      <td>-0.394338</td>
-      <td>-0.117943</td>
-      <td>0.812184</td>
+      <td>1.252907</td>
+      <td>1.018928</td>
+      <td>-2.187468</td>
+      <td>-2.364223</td>
     </tr>
     <tr>
       <th>2013-01-04</th>
-      <td>-1.471167</td>
-      <td>0.543112</td>
-      <td>0.029459</td>
-      <td>0.834505</td>
+      <td>-0.497004</td>
+      <td>-0.390074</td>
+      <td>0.361885</td>
+      <td>-2.214020</td>
     </tr>
     <tr>
       <th>2013-01-05</th>
-      <td>0.107340</td>
-      <td>-0.839317</td>
-      <td>2.139297</td>
-      <td>0.646337</td>
+      <td>-0.370186</td>
+      <td>-0.540677</td>
+      <td>-0.443100</td>
+      <td>1.387345</td>
     </tr>
     <tr>
       <th>2013-01-06</th>
-      <td>0.227956</td>
-      <td>0.471119</td>
-      <td>-0.026487</td>
-      <td>1.766095</td>
+      <td>0.409407</td>
+      <td>0.433432</td>
+      <td>-1.308863</td>
+      <td>0.222998</td>
     </tr>
   </tbody>
 </table>
@@ -767,17 +767,17 @@ df.sort_values(by='B')
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -792,46 +792,46 @@ df.sort_values(by='B')
   </thead>
   <tbody>
     <tr>
-      <th>2013-01-02</th>
-      <td>-1.403231</td>
-      <td>-0.316784</td>
-      <td>0.791482</td>
-      <td>-0.699104</td>
-    </tr>
-    <tr>
-      <th>2013-01-01</th>
-      <td>-1.285004</td>
-      <td>-0.228990</td>
-      <td>-0.412877</td>
-      <td>-0.801001</td>
-    </tr>
-    <tr>
       <th>2013-01-03</th>
-      <td>0.812184</td>
-      <td>-0.117943</td>
-      <td>-0.394338</td>
-      <td>1.669255</td>
+      <td>-2.364223</td>
+      <td>-2.187468</td>
+      <td>1.018928</td>
+      <td>1.252907</td>
     </tr>
     <tr>
       <th>2013-01-06</th>
-      <td>1.766095</td>
-      <td>-0.026487</td>
-      <td>0.471119</td>
-      <td>0.227956</td>
-    </tr>
-    <tr>
-      <th>2013-01-04</th>
-      <td>0.834505</td>
-      <td>0.029459</td>
-      <td>0.543112</td>
-      <td>-1.471167</td>
+      <td>0.222998</td>
+      <td>-1.308863</td>
+      <td>0.433432</td>
+      <td>0.409407</td>
     </tr>
     <tr>
       <th>2013-01-05</th>
-      <td>0.646337</td>
-      <td>2.139297</td>
-      <td>-0.839317</td>
-      <td>0.107340</td>
+      <td>1.387345</td>
+      <td>-0.443100</td>
+      <td>-0.540677</td>
+      <td>-0.370186</td>
+    </tr>
+    <tr>
+      <th>2013-01-01</th>
+      <td>1.203664</td>
+      <td>0.035199</td>
+      <td>-0.516512</td>
+      <td>-1.651954</td>
+    </tr>
+    <tr>
+      <th>2013-01-04</th>
+      <td>-2.214020</td>
+      <td>0.361885</td>
+      <td>-0.390074</td>
+      <td>-0.497004</td>
+    </tr>
+    <tr>
+      <th>2013-01-02</th>
+      <td>-0.935893</td>
+      <td>0.854944</td>
+      <td>-0.814971</td>
+      <td>-0.333447</td>
     </tr>
   </tbody>
 </table>
@@ -857,12 +857,12 @@ df['A']
 
 
 
-    2013-01-01   -1.285004
-    2013-01-02   -1.403231
-    2013-01-03    0.812184
-    2013-01-04    0.834505
-    2013-01-05    0.646337
-    2013-01-06    1.766095
+    2013-01-01    1.203664
+    2013-01-02   -0.935893
+    2013-01-03   -2.364223
+    2013-01-04   -2.214020
+    2013-01-05    1.387345
+    2013-01-06    0.222998
     Freq: D, Name: A, dtype: float64
 
 
@@ -878,17 +878,17 @@ df[0:3]
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -904,24 +904,24 @@ df[0:3]
   <tbody>
     <tr>
       <th>2013-01-01</th>
-      <td>-1.285004</td>
-      <td>-0.228990</td>
-      <td>-0.412877</td>
-      <td>-0.801001</td>
+      <td>1.203664</td>
+      <td>0.035199</td>
+      <td>-0.516512</td>
+      <td>-1.651954</td>
     </tr>
     <tr>
       <th>2013-01-02</th>
-      <td>-1.403231</td>
-      <td>-0.316784</td>
-      <td>0.791482</td>
-      <td>-0.699104</td>
+      <td>-0.935893</td>
+      <td>0.854944</td>
+      <td>-0.814971</td>
+      <td>-0.333447</td>
     </tr>
     <tr>
       <th>2013-01-03</th>
-      <td>0.812184</td>
-      <td>-0.117943</td>
-      <td>-0.394338</td>
-      <td>1.669255</td>
+      <td>-2.364223</td>
+      <td>-2.187468</td>
+      <td>1.018928</td>
+      <td>1.252907</td>
     </tr>
   </tbody>
 </table>
@@ -938,17 +938,17 @@ df['20130102':'20130104']
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -964,24 +964,24 @@ df['20130102':'20130104']
   <tbody>
     <tr>
       <th>2013-01-02</th>
-      <td>-1.403231</td>
-      <td>-0.316784</td>
-      <td>0.791482</td>
-      <td>-0.699104</td>
+      <td>-0.935893</td>
+      <td>0.854944</td>
+      <td>-0.814971</td>
+      <td>-0.333447</td>
     </tr>
     <tr>
       <th>2013-01-03</th>
-      <td>0.812184</td>
-      <td>-0.117943</td>
-      <td>-0.394338</td>
-      <td>1.669255</td>
+      <td>-2.364223</td>
+      <td>-2.187468</td>
+      <td>1.018928</td>
+      <td>1.252907</td>
     </tr>
     <tr>
       <th>2013-01-04</th>
-      <td>0.834505</td>
-      <td>0.029459</td>
-      <td>0.543112</td>
-      <td>-1.471167</td>
+      <td>-2.214020</td>
+      <td>0.361885</td>
+      <td>-0.390074</td>
+      <td>-0.497004</td>
     </tr>
   </tbody>
 </table>
@@ -1003,10 +1003,10 @@ df.loc[dates[0]]
 
 
 
-    A   -1.285004
-    B   -0.228990
-    C   -0.412877
-    D   -0.801001
+    A    1.203664
+    B    0.035199
+    C   -0.516512
+    D   -1.651954
     Name: 2013-01-01 00:00:00, dtype: float64
 
 
@@ -1022,17 +1022,17 @@ df.loc[:,['A','B']]
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -1046,33 +1046,33 @@ df.loc[:,['A','B']]
   <tbody>
     <tr>
       <th>2013-01-01</th>
-      <td>-1.285004</td>
-      <td>-0.228990</td>
+      <td>1.203664</td>
+      <td>0.035199</td>
     </tr>
     <tr>
       <th>2013-01-02</th>
-      <td>-1.403231</td>
-      <td>-0.316784</td>
+      <td>-0.935893</td>
+      <td>0.854944</td>
     </tr>
     <tr>
       <th>2013-01-03</th>
-      <td>0.812184</td>
-      <td>-0.117943</td>
+      <td>-2.364223</td>
+      <td>-2.187468</td>
     </tr>
     <tr>
       <th>2013-01-04</th>
-      <td>0.834505</td>
-      <td>0.029459</td>
+      <td>-2.214020</td>
+      <td>0.361885</td>
     </tr>
     <tr>
       <th>2013-01-05</th>
-      <td>0.646337</td>
-      <td>2.139297</td>
+      <td>1.387345</td>
+      <td>-0.443100</td>
     </tr>
     <tr>
       <th>2013-01-06</th>
-      <td>1.766095</td>
-      <td>-0.026487</td>
+      <td>0.222998</td>
+      <td>-1.308863</td>
     </tr>
   </tbody>
 </table>
@@ -1091,17 +1091,17 @@ df.loc['20130102':'20130104', ['A','B']]
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -1115,18 +1115,18 @@ df.loc['20130102':'20130104', ['A','B']]
   <tbody>
     <tr>
       <th>2013-01-02</th>
-      <td>-1.403231</td>
-      <td>-0.316784</td>
+      <td>-0.935893</td>
+      <td>0.854944</td>
     </tr>
     <tr>
       <th>2013-01-03</th>
-      <td>0.812184</td>
-      <td>-0.117943</td>
+      <td>-2.364223</td>
+      <td>-2.187468</td>
     </tr>
     <tr>
       <th>2013-01-04</th>
-      <td>0.834505</td>
-      <td>0.029459</td>
+      <td>-2.214020</td>
+      <td>0.361885</td>
     </tr>
   </tbody>
 </table>
@@ -1144,8 +1144,8 @@ df.loc['20130102',['A','B']]
 
 
 
-    A   -1.403231
-    B   -0.316784
+    A   -0.935893
+    B    0.854944
     Name: 2013-01-02 00:00:00, dtype: float64
 
 
@@ -1160,7 +1160,7 @@ df.loc[dates[0],'A']
 
 
 
-    -1.2850035603350833
+    1.2036641391265706
 
 
 
@@ -1174,7 +1174,7 @@ df.at[dates[0],'A']
 
 
 
-    -1.2850035603350833
+    1.2036641391265706
 
 
 
@@ -2035,17 +2035,17 @@ df1
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -2056,45 +2056,40 @@ df1
       <th>B</th>
       <th>C</th>
       <th>D</th>
-      <th>F</th>
       <th>E</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>2013-01-01</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>-0.412877</td>
-      <td>5</td>
-      <td>NaN</td>
+      <td>1.203664</td>
+      <td>0.035199</td>
+      <td>-0.516512</td>
+      <td>-1.651954</td>
       <td>1.0</td>
     </tr>
     <tr>
       <th>2013-01-02</th>
-      <td>-1.403231</td>
-      <td>-0.316784</td>
-      <td>0.791482</td>
-      <td>5</td>
-      <td>1.0</td>
+      <td>-0.935893</td>
+      <td>0.854944</td>
+      <td>-0.814971</td>
+      <td>-0.333447</td>
       <td>1.0</td>
     </tr>
     <tr>
       <th>2013-01-03</th>
-      <td>0.812184</td>
-      <td>-0.117943</td>
-      <td>-0.394338</td>
-      <td>5</td>
-      <td>2.0</td>
+      <td>-2.364223</td>
+      <td>-2.187468</td>
+      <td>1.018928</td>
+      <td>1.252907</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>2013-01-04</th>
-      <td>0.834505</td>
-      <td>0.029459</td>
-      <td>0.543112</td>
-      <td>5</td>
-      <td>3.0</td>
+      <td>-2.214020</td>
+      <td>0.361885</td>
+      <td>-0.390074</td>
+      <td>-0.497004</td>
       <td>NaN</td>
     </tr>
   </tbody>
@@ -2114,17 +2109,17 @@ df1.dropna(how='any')
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -2135,18 +2130,24 @@ df1.dropna(how='any')
       <th>B</th>
       <th>C</th>
       <th>D</th>
-      <th>F</th>
       <th>E</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>2013-01-02</th>
-      <td>-1.403231</td>
-      <td>-0.316784</td>
-      <td>0.791482</td>
-      <td>5</td>
+      <th>2013-01-01</th>
+      <td>1.203664</td>
+      <td>0.035199</td>
+      <td>-0.516512</td>
+      <td>-1.651954</td>
       <td>1.0</td>
+    </tr>
+    <tr>
+      <th>2013-01-02</th>
+      <td>-0.935893</td>
+      <td>0.854944</td>
+      <td>-0.814971</td>
+      <td>-0.333447</td>
       <td>1.0</td>
     </tr>
   </tbody>
@@ -2244,15 +2245,70 @@ pd.isna(df1)
 ```
 
 
-    ---------------------------------------------------------------------------
 
-    AttributeError                            Traceback (most recent call last)
 
-    <ipython-input-60-e6f1028dcf7b> in <module>()
-    ----> 1 pd.isna(df1)
-    
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-    AttributeError: module 'pandas' has no attribute 'isna'
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2013-01-01</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2013-01-02</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2013-01-03</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2013-01-04</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 
 ## Operation (연산)
@@ -6110,14 +6166,14 @@ if pd.Series([False, True, False]):
 
     ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
 
+
 이러한 경우에는, any(), all() or empty 등을 사용해서 무엇을 원하는지를 선택(반영)해주어야 합니다.
 
 
 ```python
 if pd.Series([False, True, False])is not None:
-       print("I was not None")
+      print("I was not None")
 ```
-
 
 설명과 무엇을 해야하는지에 대해서는 [비교](https://pandas.pydata.org/pandas-docs/stable/basics.html#basics-compare) 부분을 참조하세요.
 
