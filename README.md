@@ -2,9 +2,9 @@
 # Pandas 10분 완성
 
 *역자 주 : 본 자료는 10 Minutes to Pandas(하단 원문 링크 참조)의 한글 번역 자료로, 번역은 데잇걸즈2 프로그램 교육생 모두가 함께 진행하였습니다. 데잇걸즈2는 과학기술정보통신부와 한국정보화진흥원이 주관하는 SW여성인재 빅데이터 분석 교육과정으로, 상세한 소개는 [홈페이지](http://dataitgirls2.pagedemo.co/)를 참조 부탁 드립니다.* <br>
-*본 자료의 저작권은 Creative Common License 기준으로 CC BY-NC-ND(저작자표시 - 비영리 - 변경금지)인 점을 참조하여 주세요.* <br><br>
+*본 자료의 저작권은 BSD-3-Clause([나무위키 참조](https://namu.wiki/w/BSD%20%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4))인 점을 참조하여 주세요.* <br><br>
 *This documentation is a Korean translation material of '10 Minutes to Pandas'. Every members of DATAITGIRLS2 program participated in the translation. If you want to know about DATAITGIRLS2 program, please visit [DATAITGIRLS2 program's homepage](http://dataitgirls2.pagedemo.co/).*<br>
-*The copyright conditions of this documentation are CC BY-NC-ND on Creative Common License basis.* <br><br>
+*The copyright conditions of this documentation are BSD-3-Clause.* <br><br>
 
 *역자 주(참조 자료) : [10 Minuts to Pandas 원문](https://pandas.pydata.org/pandas-docs/stable/10min.html), [판다스 개발자의 PyCon Korea 2016 발표 : Keynote](https://www.youtube.com/watch?v=O5uFF1H0R0M), [Pandas 10분 완성 원문의 인터넷 강의 영상](https://vimeo.com/59324550), [Pandas Cheat Sheet](http://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)* <br><br><br>
 
@@ -275,7 +275,7 @@ df2.dtypes
 
 
 IPython을 이용하고 계시다면, (공용 속성을 포함한) 열 이름에 대한 Tap 자동완성 기능이 자동으로 활성화됩니다. <br>
-다음은 완성될 속성에 대한 부분집합(subset)입니다. 
+다음은 완성될 속성에 대한 부분집합(subset)입니다.
 
 *역자 주 : 아래 제시된 코드의 경우, IPython이 아닌 환경(Google Colaboratory, Jupyter 등)에서는 사용이 불가능한 코드인 점에 주의하세요.*
 
@@ -301,7 +301,7 @@ df2.applymap           df2.consolidate
 df2.D
 ```
 
-보시다시피, A, B, C 그리고 D 열이 Tab 자동완성 기능으로 실행됩니다. 물론 E도 있습니다. 나머지 속성들은 간결하게 잘라버렸습니다. 
+보시다시피, A, B, C 그리고 D 열이 Tab 자동완성 기능으로 실행됩니다. 물론 E도 있습니다. 나머지 속성들은 간결하게 잘라버렸습니다.
 
 ## Viewing Data(데이터 확인하기)
 
@@ -841,7 +841,7 @@ df.sort_values(by='B')
 
 ## Selection (선택)
 
-주석(Note) : 선택과 설정을 위한 Python / Numpy의 표준화된 표현들이 직관적이며, 코드 작성을 위한 양방향 작업에 유용하지만 우리는 Pandas에 최적화된 데이터 접근 방법인 .at, .iat, .loc 및 .iloc 을 추천합니다. 
+주석(Note) : 선택과 설정을 위한 Python / Numpy의 표준화된 표현들이 직관적이며, 코드 작성을 위한 양방향 작업에 유용하지만 우리는 Pandas에 최적화된 데이터 접근 방법인 .at, .iat, .loc 및 .iloc 을 추천합니다.
 
 [데이터 인덱싱 및 선택](https://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing) 문서와 [다중 인덱싱 / 심화 인덱싱](https://pandas.pydata.org/pandas-docs/stable/advanced.html#advanced) 문서를 참조하세요.
 
@@ -2668,11 +2668,11 @@ s.str.lower()
 
 ### Concat (연결)
 
-결합(join) / 병합(merge) 형태의 연산에 대한 인덱스, 관계 대수 기능을 위한 다양한 형태의 논리를 포함한 Series, 데이터프레임, Panel 객체를 손쉽게 결합할 수 있도록 하는 다양한 기능을 pandas 에서 제공합니다. 
+결합(join) / 병합(merge) 형태의 연산에 대한 인덱스, 관계 대수 기능을 위한 다양한 형태의 논리를 포함한 Series, 데이터프레임, Panel 객체를 손쉽게 결합할 수 있도록 하는 다양한 기능을 pandas 에서 제공합니다.
 
-[Merging](https://pandas.pydata.org/pandas-docs/stable/merging.html#merging) 부분을 참조하세요. 
+[Merging](https://pandas.pydata.org/pandas-docs/stable/merging.html#merging) 부분을 참조하세요.
 
-[concat()](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.concat.html#pandas.concat)으로 pandas 객체를 연결합니다. 
+[concat()](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.concat.html#pandas.concat)으로 pandas 객체를 연결합니다.
 
 
 ```python
@@ -3134,7 +3134,7 @@ left
 
 
 ```python
-right 
+right
 ```
 
 
@@ -5657,9 +5657,9 @@ pd.read_hdf('foo.h5','df')
 
 
 ### Excel
-[MS Excel](https://pandas.pydata.org/pandas-docs/stable/io.html#io-excel)에 읽고 씁니다. 
+[MS Excel](https://pandas.pydata.org/pandas-docs/stable/io.html#io-excel)에 읽고 씁니다.
 
-엑셀 파일에 씁니다. 
+엑셀 파일에 씁니다.
 
 
 
@@ -6154,15 +6154,15 @@ if pd.Series([False, True, False]):
     <ipython-input-153-9cae3ab0f79f> in <module>()
     ----> 1 if pd.Series([False, True, False]):
           2     print("I was true")
-    
+
 
     C:\Users\Admin\Anaconda3\lib\site-packages\pandas\core\generic.py in __nonzero__(self)
         951         raise ValueError("The truth value of a {0} is ambiguous. "
         952                          "Use a.empty, a.bool(), a.item(), a.any() or a.all()."
     --> 953                          .format(self.__class__.__name__))
-        954 
+        954
         955     __bool__ = __nonzero__
-    
+
 
     ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
 
