@@ -4,13 +4,15 @@ layout: default
 ---
 # Pandas 10분 완성
 
-*역자 주 : 본 자료는 10 Minutes to Pandas(하단 원문 링크 참조)의 한글 번역 자료로, 번역은 데잇걸즈2 프로그램 교육생 모두가 함께 진행하였습니다. 데잇걸즈2는 과학기술정보통신부와 한국정보화진흥원이 주관하는 SW여성인재 빅데이터 분석 교육과정으로, 상세한 소개는 [홈페이지](http://dataitgirls2.pagedemo.co/)를 참조 부탁 드립니다.* <br>
-*본 자료의 저작권은 BSD-3-Clause([나무위키 참조](https://namu.wiki/w/BSD%20%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4))인 점을 참조하여 주세요.* <br><br>
-*This documentation is a Korean translation material of '10 Minutes to Pandas'. Every members of DATAITGIRLS2 program participated in the translation. If you want to know about DATAITGIRLS2 program, please visit [DATAITGIRLS2 program's homepage](http://dataitgirls2.pagedemo.co/).*<br>
-*The copyright conditions of this documentation are BSD-3-Clause.* <br><br>
+*역자 주: 본 자료는 10 Minutes to Pandas(하단 원문 링크 참조)의 한글 번역 자료로, 번역은 데잇걸즈2 프로그램 교육생 모두가 함께 진행하였습니다. 데잇걸즈2는 과학기술정보통신부와 한국정보화진흥원이 주관하는 SW여성인재 빅데이터 분석 교육과정으로, 상세한 소개는 [홈페이지](http://dataitgirls2.pagedemo.co/)를 참조 부탁 드립니다.*
 
-*역자 주(참조 자료) : [10 Minuts to Pandas 원문](https://pandas.pydata.org/pandas-docs/stable/10min.html), [판다스 개발자의 PyCon Korea 2016 발표 : Keynote](https://www.youtube.com/watch?v=O5uFF1H0R0M), [Pandas 10분 완성 원문의 인터넷 강의 영상](https://vimeo.com/59324550), [Pandas Cheat Sheet](http://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)* <br><br><br>
+*본 자료의 저작권은 [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)인 점을 참조하여 주세요.*
 
+*This documentation is a Korean translation material of '10 Minutes to Pandas'. Every members of DATAITGIRLS2 program participated in the translation. If you want to know about DATAITGIRLS2 program, please visit [DATAITGIRLS2 program's homepage](http://dataitgirls2.pagedemo.co/).*
+
+*The copyright conditions of this documentation are BSD-3-Clause.*
+
+*역자 주(참조 자료) : [10 Minuts to Pandas 원문](https://pandas.pydata.org/pandas-docs/stable/10min.html), [판다스 개발자의 PyCon Korea 2016 발표 : Keynote](https://www.youtube.com/watch?v=O5uFF1H0R0M), [Pandas 10분 완성 원문의 인터넷 강의 영상](https://vimeo.com/59324550), [Pandas Cheat Sheet](http://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)*
 
 이 소개서는 주로 신규 사용자를 대상으로 한 판다스에 대한 간략한 소개입니다. 더 복잡한 방법은 [Cookbook](https://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook) 에서 볼 수 있습니다.
 
@@ -22,11 +24,9 @@ layout: default
 import pandas as pd
 ```
 
-
 ```python
 import numpy as np
 ```
-
 
 ```python
 import matplotlib.pyplot as plt
