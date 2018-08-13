@@ -1,0 +1,30 @@
+body {
+  max-width: 48em;
+  margin: 1em auto 3em;
+}
+
+div.highlight {
+  padding: 1em;
+  margin: 1em 0;
+  background-color: #F3F3F3;
+
+  pre {
+    margin-bottom: 0;
+  }
+}
+
+table {
+  margin: 1em 0;
+
+  th, td {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    padding: 0.2em 0.5em;
+    border-color: 1px solid #DDD;
+    text-align: right;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+}
