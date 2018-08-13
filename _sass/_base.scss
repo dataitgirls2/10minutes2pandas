@@ -1,6 +1,8 @@
 body {
+  width: 100%;
   max-width: 48em;
-  margin: 1em auto 3em;
+  margin: 0 auto;
+  padding: 1em 1em 3em;
 }
 
 div.highlight {
@@ -11,6 +13,10 @@ div.highlight {
   pre {
     margin-bottom: 0;
   }
+}
+
+div {
+  overflow-x: auto;
 }
 
 table {
