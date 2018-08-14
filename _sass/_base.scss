@@ -2,25 +2,35 @@ body {
   width: 100%;
   max-width: 48em;
   margin: 0 auto;
-  padding: 1em 1em 3em;
+  padding: 1em 1em 6em;
+  word-break: keep-all;
 }
 
-div.highlight {
-  padding: 1em;
-  margin: 1em 0;
+div.highlighter-rouge {
+  padding: 0.5em 1em;
+  margin: 0.5em -1em 0.5em;
   background-color: #F3F3F3;
+  line-height: 1.8;
 
   pre {
     margin-bottom: 0;
   }
 }
 
+div.highlighter-rouge + p {
+  margin-top: 2em;
+}
+
+div.highlighter-rouge + div {
+  margin-bottom: 0em;
+}
+
 div {
-  overflow-x: auto;
+  overflow-x: scroll;
 }
 
 table {
-  margin: 1em 0;
+  margin: 1em 0 2em;
 
   th, td {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -30,7 +40,30 @@ table {
   }
 }
 
+hr {
+  margin: 5em 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.8em;
+}
+
+h2 + p {
+  font-weight: bold;
+}
+
+h2 + p + p {
+  font-weight: bold;
+}
+
+h2 + p + p + p {
+  font-weight: bold;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 1.5em;
-  margin-bottom: 0.8em;
+  margin-top: 3.5em;
+  margin-bottom: 0.6em;
 }
