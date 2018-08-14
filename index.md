@@ -4,15 +4,17 @@ layout: default
 ---
 # Pandas 10분 완성
 
-*역자 주: 본 자료는 10 Minutes to Pandas(하단 원문 링크 참조)의 한글 번역 자료로, 번역은 데잇걸즈2 프로그램 교육생 모두가 함께 진행하였습니다. 데잇걸즈2는 과학기술정보통신부와 한국정보화진흥원이 주관하는 SW여성인재 빅데이터 분석 교육과정으로, 상세한 소개는 [홈페이지](http://dataitgirls2.pagedemo.co/)를 참조 부탁 드립니다.*
+**역자 주 : 본 자료는 10 Minutes to Pandas (하단 원문 링크 참조)의 한글 번역 자료로, 번역은 데잇걸즈2 프로그램 교육생 모두가 함께 진행하였습니다. 데잇걸즈2는 과학기술정보통신부와 한국정보화진흥원이 주관하는 SW여성인재 빅데이터 분석 교육과정으로, 상세한 소개는 [홈페이지](http://dataitgirls2.pagedemo.co/)를 참조 부탁 드립니다.**
 
-*본 자료의 저작권은 [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)인 점을 참조하여 주세요.*
+**본 자료의 저작권은 [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)인 점을 참조하여 주세요.**
 
-*This documentation is a Korean translation material of '10 Minutes to Pandas'. Every members of DATAITGIRLS2 program participated in the translation. If you want to know about DATAITGIRLS2 program, please visit [DATAITGIRLS2 program's homepage](http://dataitgirls2.pagedemo.co/).*
+**This documentation is a Korean translation material of '10 Minutes to Pandas'. Every members of DATAITGIRLS2 program participated in the translation. If you want to know about DATAITGIRLS2 program, please visit [DATAITGIRLS2 program's homepage](http://dataitgirls2.pagedemo.co/).**
 
-*The copyright conditions of this documentation are BSD-3-Clause.*
+**The copyright conditions of this documentation are BSD-3-Clause.**
 
-*역자 주(참조 자료) : [10 Minuts to Pandas 원문](https://pandas.pydata.org/pandas-docs/stable/10min.html), [판다스 개발자의 PyCon Korea 2016 발표 : Keynote](https://www.youtube.com/watch?v=O5uFF1H0R0M), [Pandas 10분 완성 원문의 인터넷 강의 영상](https://vimeo.com/59324550), [Pandas Cheat Sheet](http://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)*
+**역자 주 (참조 자료) : [10 Minuts to Pandas 원문](https://pandas.pydata.org/pandas-docs/stable/10min.html), [판다스 개발자의 PyCon Korea 2016 발표 : Keynote](https://www.youtube.com/watch?v=O5uFF1H0R0M), [Pandas 10분 완성 원문의 인터넷 강의 영상](https://vimeo.com/59324550), [Pandas Cheat Sheet](http://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)**
+
+----
 
 이 소개서는 주로 신규 사용자를 대상으로 한 판다스에 대한 간략한 소개입니다. 더 복잡한 방법은 [Cookbook](https://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook) 에서 볼 수 있습니다.
 
@@ -36,7 +38,7 @@ import matplotlib.pyplot as plt
 
 [데이터 구조 소개 섹션](https://pandas.pydata.org/pandas-docs/stable/dsintro.html#dsintro)을 참조하세요.
 
-pandas는 값을 가지고 있는 리스트를 통해 [시리즈](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.html#pandas.Series)를 만들고, 정수로 만들어진 인덱스를 기본값으로 불러올 것입니다.
+Pandas는 값을 가지고 있는 리스트를 통해 [Series](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.html#pandas.Series)를 만들고, 정수로 만들어진 인덱스를 기본값으로 불러올 것입니다.
 
 
 ```python
@@ -61,7 +63,7 @@ s
 
 
 
-datetime 인덱스와 레이블이 있는 열을 가지고 있는 NumPy 배열을 전달하여 데이터프레임을 만듭니다.
+datetime 인덱스와 레이블이 있는 열을 가지고 있는 numpy 배열을 전달하여 데이터프레임을 만듭니다.
 
 
 ```python
@@ -168,7 +170,7 @@ df
 
 
 
-시리즈와 같은 것으로 변환될 수 있는 객체들의 dict로 구성된 데이터프레임을 만듭니다.
+Series와 같은 것으로 변환될 수 있는 객체들의 dict로 구성된 데이터프레임을 만듭니다.
 
 
 ```python
@@ -257,7 +259,7 @@ df2
 
 
 
-데이터프레임 결과물의 열은 다양한 데이터 타입(dtypes)으로 구성됩니다.
+데이터프레임 결과물의 열은 다양한 데이터 타입 (dtypes)으로 구성됩니다.
 
 
 ```python
@@ -277,17 +279,16 @@ df2.dtypes
 
 
 
-IPython을 이용하고 계시다면, (공용 속성을 포함한) 열 이름에 대한 Tap 자동완성 기능이 자동으로 활성화됩니다. <br>
-다음은 완성될 속성에 대한 부분집합(subset)입니다.
+IPython을 이용하고 계시다면 (공용 속성을 포함한) 열 이름에 대한 Tap 자동완성 기능이 자동으로 활성화 됩니다. 다음은 완성될 속성에 대한 부분집합 (subset)입니다.
 
-*역자 주 : 아래 제시된 코드의 경우, IPython이 아닌 환경(Google Colaboratory, Jupyter 등)에서는 사용이 불가능한 코드인 점에 주의하세요.*
+**역자 주 : 아래 제시된 코드의 경우, IPython이 아닌 환경 (Google Colaboratory, Jupyter 등)에서는 사용이 불가능한 코드인 점에 주의하세요.**
 
 
 ```python
 # df2.<TAB>
 ```
 
-*역자 주 : IPython에서 실행하면 다음과 같은 결과값이 나옵니다.*
+**역자 주 : IPython에서 실행하면 다음과 같은 결과값이 나옵니다.**
 
 ```
 df2.A                  df2.bool
@@ -304,23 +305,22 @@ df2.applymap           df2.consolidate
 df2.D
 ```
 
-보시다시피, A, B, C 그리고 D 열이 Tab 자동완성 기능으로 실행됩니다. 물론 E도 있습니다. 나머지 속성들은 간결하게 잘라버렸습니다.
+보시다시피 A, B, C, D열이 탭 자동완성 기능으로 실행됩니다. 물론 E도 있습니다. 나머지 속성들은 간결하게 잘라 버렸습니다.
 
-## Viewing Data(데이터 확인하기)
+## Viewing Data (데이터 확인하기)
 
 [Basic Section](https://pandas.pydata.org/pandas-docs/stable/basics.html#basics)을 참조하세요.
 
 데이터프레임의 가장 윗 줄과 마지막 줄을 확인하고 싶을 때에 사용하는 방법은 다음과 같습니다. <br>
 
-*역자 주 <br>
-괄호()안에는 숫자가 들어갈 수도 있고 안 들어갈 수도 있습니다. <br>
-숫자가 들어간다면, 윗/마지막 줄의 특정 줄을 불러올 수 있습니다. <br>
-숫자가 들어가지 않다면, 기본값인 5로 처리됩니다.*
+**역자 주: 괄호() 안에는 숫자가 들어갈 수도 있고 안 들어갈 수도 있습니다. 숫자가 들어간다면, 윗 / 마지막 줄의 특정 줄을 불러올 수 있습니다. 숫자가 들어가지 않다면, 기본값인 5로 처리됩니다.**
 
-*예시 <br>
-df.tail(3) - 끝에서 마지막 3줄을 불러옴 <br>
-df.tail() - 끝에서 마지막 5줄 불러옴*
+예시
 
+```python
+df.tail(3)  # 끝에서 마지막 3줄을 불러옴
+df.tail()  # 끝에서 마지막 5줄 불러옴
+```
 
 ```python
 df.head()
@@ -455,7 +455,7 @@ df.tail(3)
 
 
 
-인덱스(Index), 열(Column) 그리고 NumPy 데이터에 대한 세부 정보를 봅니다.
+인덱스 (index), 열 (column) 그리고 numpy 데이터에 대한 세부 정보를 봅니다.
 
 
 ```python
@@ -844,7 +844,7 @@ df.sort_values(by='B')
 
 ## Selection (선택)
 
-주석(Note) : 선택과 설정을 위한 Python / Numpy의 표준화된 표현들이 직관적이며, 코드 작성을 위한 양방향 작업에 유용하지만 우리는 Pandas에 최적화된 데이터 접근 방법인 .at, .iat, .loc 및 .iloc 을 추천합니다.
+주석 (Note) : 선택과 설정을 위한 Python / Numpy의 표준화된 표현들이 직관적이며, 코드 작성을 위한 양방향 작업에 유용하지만 우리는 Pandas에 최적화된 데이터 접근 방법인 .at, .iat, .loc 및 .iloc 을 추천합니다.
 
 [데이터 인덱싱 및 선택](https://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing) 문서와 [다중 인덱싱 / 심화 인덱싱](https://pandas.pydata.org/pandas-docs/stable/advanced.html#advanced) 문서를 참조하세요.
 
@@ -870,7 +870,7 @@ df['A']
 
 
 
-행을 분할하는 []를 통해 선택합니다.
+행을 분할하는 [ ]를 통해 선택합니다.
 
 
 ```python
@@ -1014,7 +1014,7 @@ df.loc[dates[0]]
 
 
 
-라벨을 사용하여 여러 축(의 데이터)을 얻습니다.
+라벨을 사용하여 여러 축 (의 데이터)을 얻습니다.
 
 
 ```python
@@ -1167,7 +1167,7 @@ df.loc[dates[0],'A']
 
 
 
-스칼라 값을 더 빠르게 구하는 방법입니다. (앞선 메소드와 동일합니다.)
+스칼라 값을 더 빠르게 구하는 방법입니다 (앞선 메소드와 동일합니다).
 
 
 ```python
@@ -1203,7 +1203,7 @@ df.iloc[3]
 
 
 
-정수(로 표기된) 슬라이스들을 통해, numpy/python과 유사하게 작동합니다.
+정수로 표기된 슬라이스들을 통해, numpy / python과 유사하게 작동합니다.
 
 
 ```python
@@ -1252,7 +1252,7 @@ df.iloc[3:5,0:2]
 
 
 
-정수(로 표기된) 위치값의 리스트들을 통해, numpy/python의 스타일과 유사해집니다.
+정수로 표기된 위치값의 리스트들을 통해, numpy / python의 스타일과 유사해집니다.
 
 
 ```python
@@ -1444,8 +1444,7 @@ df.iloc[1,1]
 
 
 
-스칼라 값을 빠르게 얻는 방법입니다. (위의 방식과 동일합니다.)
-
+스칼라 값을 빠르게 얻는 방법입니다 (위의 방식과 동일합니다).
 
 ```python
 df.iat[1,1]
@@ -1815,7 +1814,7 @@ df.at[dates[0],'A'] = 0
 df.iat[0,1] = 0
 ```
 
-NumPy 배열을 사용한 할당에 의해 값을 설정합니다.
+Numpy 배열을 사용한 할당에 의해 값을 설정합니다.
 
 
 ```python
@@ -2014,10 +2013,9 @@ df2
 
 ## Missing Data (결측치)
 
-pandas는 결측치를 표현하기 위해 주로 np.nan 값을 사용합니다. 이 방법은 기본 설정값이지만 계산에는 포함되지 않습니다. <br>
-[Missing Data section](https://pandas.pydata.org/pandas-docs/stable/missing_data.html#missing-data)를 참조하세요.
+Pandas는 결측치를 표현하기 위해 주로 np.nan 값을 사용합니다. 이 방법은 기본 설정값이지만 계산에는 포함되지 않습니다. [Missing data section](https://pandas.pydata.org/pandas-docs/stable/missing_data.html#missing-data)을 참조하세요.
 
-Reindexing으로 지정된 축 상의 인덱스를 변경/추가/삭제할 수 있습니다. Reindexing은 데이터의 복사본을 반환합니다.
+Reindexing으로 지정된 축 상의 인덱스를 변경 / 추가 / 삭제할 수 있습니다. Reindexing은 데이터의 복사본을 반환합니다.
 
 
 ```python
@@ -2238,9 +2236,9 @@ df1.fillna(value=5)
 
 
 
-nan인 값에 Boolean(을 통한) 표식을 얻습니다.
+nan인 값에 boolean을 통한 표식을 얻습니다.
 
-*역자 주 : 데이터프레임의 모든 값이 Boolean 형태로 표시되도록 하며, nan인 값에만 True가 표시되게 하는 함수입니다.*
+**역자 주 : 데이터프레임의 모든 값이 boolean 형태로 표시되도록 하며, nan인 값에만 True가 표시되게 하는 함수입니다.**
 
 
 ```python
@@ -2316,7 +2314,7 @@ pd.isna(df1)
 
 ## Operation (연산)
 
-[이진(Binary) 연산의 기본 섹션](https://pandas.pydata.org/pandas-docs/stable/basics.html#basics-binop)을 참조하세요.
+[이진 (Binary) 연산의 기본 섹션](https://pandas.pydata.org/pandas-docs/stable/basics.html#basics-binop)을 참조하세요.
 
 ### Stats (통계)
 
@@ -2363,7 +2361,7 @@ df.mean(1)
 
 정렬이 필요하며, 차원이 다른 객체로 연산해보겠습니다. 또한, pandas는 지정된 차원을 따라 자동으로 브로드 캐스팅됩니다.
 
-*역자 주 : broadcast란 numpy에서 유래한 용어로, n차원이나 스칼라 값으로 연산을 수행할 때 도출되는 결과의 규칙을 설명하는 것을 의미합니다.*
+**역자 주 : broadcast란 numpy에서 유래한 용어로, n차원이나 스칼라 값으로 연산을 수행할 때 도출되는 결과의 규칙을 설명하는 것을 의미합니다.**
 
 
 ```python
@@ -2634,7 +2632,7 @@ s.value_counts()
 
 ### String Methods (문자열 메소드)
 
-Series는 다음의 코드와 같이 문자열 처리 메소드 모음(set)을 가지고 있습니다. <br>
+Series는 다음의 코드와 같이 문자열 처리 메소드 모음 (set)을 가지고 있습니다. <br>
 이 모음은 배열의 각 요소를 쉽게 조작할 수 있도록 만들어주는 문자열의 속성에 포함되어 있습니다.
 
 문자열의 패턴 일치 확인은 기본적으로 정규 표현식을 사용하며, 몇몇 경우에는 항상 정규 표현식을 사용함에 유의하십시오.
@@ -2671,7 +2669,7 @@ s.str.lower()
 
 ### Concat (연결)
 
-결합(join) / 병합(merge) 형태의 연산에 대한 인덱스, 관계 대수 기능을 위한 다양한 형태의 논리를 포함한 Series, 데이터프레임, Panel 객체를 손쉽게 결합할 수 있도록 하는 다양한 기능을 pandas 에서 제공합니다.
+결합 (join) / 병합 (merge) 형태의 연산에 대한 인덱스, 관계 대수 기능을 위한 다양한 형태의 논리를 포함한 Series, 데이터프레임, Panel 객체를 손쉽게 결합할 수 있도록 하는 다양한 기능을 pandas 에서 제공합니다.
 
 [Merging](https://pandas.pydata.org/pandas-docs/stable/merging.html#merging) 부분을 참조하세요.
 
@@ -3445,11 +3443,11 @@ df.append(s, ignore_index=True)
 
 ## Grouping (그룹화)
 
-**그룹화**는 다음 단계 중 하나 이상을 포함하는 과정을 가리킵니다.
+그룹화는 다음 단계 중 하나 이상을 포함하는 과정을 가리킵니다.
 
-- 몇몇 기준에 따라 여러 그룹으로 데이터를 **분할(Splitting)**
-- 각 그룹에 독립적으로 함수를 **적용(Applying)**
-- 결과물들을 하나의 데이터 구조로  **결합(Combining)**
+- 몇몇 기준에 따라 여러 그룹으로 데이터를 **분할 (splitting)**
+- 각 그룹에 독립적으로 함수를 **적용 (applying)**
+- 결과물들을 하나의 데이터 구조로  **결합 (combining)**
 
 자세한 내용은 [그룹화](https://pandas.pydata.org/pandas-docs/stable/groupby.html#groupby) 부분을 참조하세요.
 
@@ -3559,7 +3557,7 @@ df
 
 
 
-(생성된 데이터프레임을) 그룹화한 후 각 그룹에 [sum()](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sum.html#pandas.DataFrame.sum) 함수를 적용합니다.
+생성된 데이터프레임을 그룹화한 후 각 그룹에 [sum()](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sum.html#pandas.DataFrame.sum) 함수를 적용합니다.
 
 
 ```python
@@ -3978,9 +3976,9 @@ stacked.unstack(0)
 
 
 
-### Pivot Tables (피벗 테이블)
+### Pivot Tables (피봇 테이블)
 
-[피벗 테이블](https://pandas.pydata.org/pandas-docs/stable/reshaping.html#reshaping-pivot) 부분을 참조하세요.
+[피봇 테이블](https://pandas.pydata.org/pandas-docs/stable/reshaping.html#reshaping-pivot) 부분을 참조하세요.
 
 
 ```python
@@ -4127,7 +4125,7 @@ df
 
 
 
-이 데이터로부터 피벗 테이블을 매우 쉽게 생성할 수 있습니다.
+이 데이터로부터 피봇 테이블을 매우 쉽게 생성할 수 있습니다.
 
 
 ```python
@@ -4223,7 +4221,7 @@ pd.pivot_table(df, values='D', index=['A', 'B'], columns=['C'])
 
 ## Time Series (시계열)
 
-pandas는 자주 일어나는 변환(예시 : 5분마다 일어나는 데이터에 대한 2차 데이터 변환) 사이에 수행하는 리샘플링 연산을 위한 간단하고, 강력하며, 효율적인 함수를 제공합니다. 이는 재무(금융) 응용에서 매우 일반적이지만 이에 국한되지는 않습니다. [시계열](https://pandas.pydata.org/pandas-docs/stable/timeseries.html#timeseries) 부분을 참고하세요.
+Pandas는 자주 일어나는 변환 (예시 : 5분마다 일어나는 데이터에 대한 2차 데이터 변환) 사이에 수행하는 리샘플링 연산을 위한 간단하고, 강력하며, 효율적인 함수를 제공합니다. 이는 재무 (금융) 응용에서 매우 일반적이지만 이에 국한되지는 않습니다. [시계열](https://pandas.pydata.org/pandas-docs/stable/timeseries.html#timeseries) 부분을 참고하세요.
 
 
 ```python
@@ -4422,7 +4420,7 @@ ts.head()
 
 ## Categoricals (범주화)
 
-pandas는 데이터프레임 내에 범주형 데이터를 포함할 수 있습니다. [범주형 소개](https://pandas.pydata.org/pandas-docs/stable/categorical.html#categorical) 와 [API 문서](https://pandas.pydata.org/pandas-docs/stable/api.html#api-categorical) 부분을 참조하세요.
+Pandas는 데이터프레임 내에 범주형 데이터를 포함할 수 있습니다. [범주형 소개](https://pandas.pydata.org/pandas-docs/stable/categorical.html#categorical) 와 [API 문서](https://pandas.pydata.org/pandas-docs/stable/api.html#api-categorical) 부분을 참조하세요.
 
 
 ```python
@@ -4455,14 +4453,14 @@ df["grade"]
 
 
 
-범주에 더 의미 있는 이름을 붙여주세요. (Series.cat.categories로 할당하는 것이 적합합니다!)
+범주에 더 의미 있는 이름을 붙여주세요 (Series.cat.categories로 할당하는 것이 적합합니다).
 
 
 ```python
 df["grade"].cat.categories = ["very good", "good", "very bad"]
 ```
 
-범주의 순서를 바꾸고 동시에 누락된 범주를 추가합니다. (Series.cat에 속하는 메소드는 기본적으로 새로운 Series를 반환합니다.)
+범주의 순서를 바꾸고 동시에 누락된 범주를 추가합니다 (Series.cat에 속하는 메소드는 기본적으로 새로운 Series를 반환합니다).
 
 
 ```python
@@ -4490,7 +4488,7 @@ df["grade"]
 
 정렬은 사전 순서가 아닌, 해당 범주에서 지정된 순서대로 배열합니다.
 
-*역자 주 : 131번에서 very bad, bad, medium, good, very good 의 순서로 기재되어 있기 때문에 정렬 결과도 해당 순서대로 배열됩니다.*
+**역자 주 : 131번에서 very bad, bad, medium, good, very good 의 순서로 기재되어 있기 때문에 정렬 결과도 해당 순서대로 배열됩니다.**
 
 
 ```python
@@ -4637,7 +4635,7 @@ plt.figure(); df.plot(); plt.legend(loc='best')
 
 
 
-## Getting Data In/Out (데이터 입/출력)
+## Getting Data In / Out (데이터 입 / 출력)
 
 ### CSV
 
@@ -6170,7 +6168,7 @@ if pd.Series([False, True, False]):
     ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
 
 
-이러한 경우에는, any(), all() or empty 등을 사용해서 무엇을 원하는지를 선택(반영)해주어야 합니다.
+이러한 경우에는 `any()`, `all()`, `empty` 등을 사용해서 무엇을 원하는지를 선택 (반영)해주어야 합니다.
 
 
 ```python
@@ -6181,3 +6179,11 @@ if pd.Series([False, True, False])is not None:
 설명과 무엇을 해야하는지에 대해서는 [비교](https://pandas.pydata.org/pandas-docs/stable/basics.html#basics-compare) 부분을 참조하세요.
 
 [Gotchas](https://pandas.pydata.org/pandas-docs/stable/gotchas.html#gotchas) 부분도 참조하세요.
+
+----
+
+본 자료의 저작권은 [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)인 점을 참조하여 주세요.
+
+This documentation is a Korean translation material of '10 Minutes to Pandas'. Every members of DATAITGIRLS2 program participated in the translation. If you want to know about DATAITGIRLS2 program, please visit [DATAITGIRLS2 program's homepage](http://dataitgirls2.pagedemo.co/).
+
+The copyright conditions of this documentation are BSD-3-Clause.
