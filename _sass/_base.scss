@@ -18,7 +18,7 @@ div.highlighter-rouge + div {
  * Non-text blocks such as codes, outputs and tables
  */
 body > div {
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: 0.5em 1em 0.5em calc(1em - 3px);
   margin: 0.5em -1em 0.5em;
   line-height: 1.8;
