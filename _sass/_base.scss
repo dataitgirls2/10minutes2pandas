@@ -6,38 +6,47 @@ body {
   word-break: keep-all;
 }
 
-div.highlighter-rouge {
-  padding: 0.5em 1em;
-  margin: 0.5em -1em 0.5em;
-  background-color: #F3F3F3;
-  line-height: 1.8;
-
-  pre {
-    margin-bottom: 0;
-  }
-}
-
-div.highlighter-rouge + p {
-  margin-top: 2em;
+div.highlighter-rouge pre {
+  margin-bottom: 0;
 }
 
 div.highlighter-rouge + div {
   margin-bottom: 0em;
 }
 
-div {
+/*
+ * Non-text blocks such as codes, outputs and tables
+ */
+body > div {
   overflow-x: scroll;
+  padding: 0.5em 1em 0.5em calc(1em - 3px);
+  margin: 0.5em -1em 0.5em;
+  line-height: 1.8;
+  border-left: 3px solid #F1F1F1;
+}
+
+/*
+ * Code blocks
+ */
+body > .language-python.highlighter-rouge {
+  background-color: #F4F4F4;
+  border-left-width: 0;
 }
 
 table {
-  margin: 1em 0 2em;
+  margin: 0.6em 0;
+  border: 1px solid #CCC;
 
   th, td {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     padding: 0.2em 0.5em;
-    border-color: 1px solid #DDD;
     text-align: right;
+    white-space: nowrap;
   }
+}
+
+div + p {
+  margin-top: 2em;
 }
 
 hr {
