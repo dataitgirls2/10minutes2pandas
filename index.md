@@ -3,8 +3,6 @@ title: Pandas 10분 완성
 layout: default
 ---
 
-![header image](https://raw.githubusercontent.com/dataitgirls2/10minutes2pandas/master/_layouts/og_image3.png)
-
 # Pandas 10분 완성
 
 **역자 주 : 본 자료는 10 Minutes to Pandas (하단 원문 링크 참조)의 한글 번역 자료로, 번역은 데잇걸즈2 프로그램 교육생 모두가 함께 진행하였습니다. 데잇걸즈2는 과학기술정보통신부와 한국정보화진흥원이 주관하는 SW여성인재 빅데이터 분석 교육과정으로, 상세한 소개는 [페이스북 페이지](https://ko-kr.facebook.com/dataitgirls/)를 참조 부탁 드립니다.**
