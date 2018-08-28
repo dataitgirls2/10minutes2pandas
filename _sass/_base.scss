@@ -50,7 +50,7 @@ div + p {
 }
 
 hr {
-  margin: 5em 0;
+  margin: 2.5em 0;
 }
 
 h1 {
@@ -59,6 +59,7 @@ h1 {
 h2 {
   font-size: 1.8em;
 }
+
 
 h2 + p {
   font-weight: bold;
@@ -72,7 +73,7 @@ h2 + p + p + p {
   font-weight: bold;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   margin-top: 3.5em;
   margin-bottom: 0.6em;
 }
