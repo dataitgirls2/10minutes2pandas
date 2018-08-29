@@ -9,7 +9,7 @@ layout: default
 
 **본 자료의 저작권은 [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)인 점을 참조하여 주세요.**
 
-**This documentation is a Korean translation material of '10 Minutes to Pandas'. Every members of DATAITGIRLS2 program participated in the translation. If you want to know about DATAITGIRLS2 program, please visit [DATAITGIRLS2 program's facebook page](https://ko-kr.facebook.com/dataitgirls/).**
+**This documentation is a Korean translation material of '10 Minutes to Pandas'. Every member of DATAITGIRLS2 program participated in the translation. If you want to know about DATAITGIRLS2 program, please visit [DATAITGIRLS2 program's facebook page](https://ko-kr.facebook.com/dataitgirls/).**
 
 **The copyright conditions of this documentation are BSD-3-Clause.**
 
@@ -17,10 +17,25 @@ layout: default
 
 ----
 
-이 소개서는 주로 신규 사용자를 대상으로 한 판다스에 대한 간략한 소개입니다. 더 복잡한 방법은 [Cookbook](https://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook) 에서 볼 수 있습니다.
+이 소개서는 주로 신규 사용자를 대상으로 한 판다스에 대한 간략한 소개로, 아래와 같이 구성되어 있습니다. 더 자세한 방법은 [Cookbook](https://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook)에서 볼 수 있습니다.
 
+1. Object Creation (객체 생성)
+2. Viewing Data (데이터 확인하기)
+3. Selection (선택)
+4. Missing Data (결측치)
+5. Operation (연산)
+6. Merge (병합)
+7. Grouping (그룹화)
+8. Reshaping (변형)
+9. Time Series (시계열)
+10. Categoricals (범주화)
+11. Plotting (그래프)
+12. Getting Data In / Out (데이터 입 / 출력)
+13. Gotchas (잡았다!)
 
-일반적으로 다음과 같이 불러옵니다.
+----
+
+일반적으로 각 패캐지는 pd, np, plt라는 이름으로 불러옵니다.
 
 
 ```python
@@ -35,7 +50,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-## Object Creation (객체 생성)
+## 1. Object Creation (객체 생성)
 
 [데이터 구조 소개 섹션](https://pandas.pydata.org/pandas-docs/stable/dsintro.html#dsintro)을 참조하세요.
 
@@ -108,13 +123,13 @@ df
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -201,13 +216,13 @@ df2
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -308,7 +323,7 @@ df2.D
 
 보시다시피 A, B, C, D열이 탭 자동완성 기능으로 실행됩니다. 물론 E도 있습니다. 나머지 속성들은 간결하게 잘라 버렸습니다.
 
-## Viewing Data (데이터 확인하기)
+## 2. Viewing Data (데이터 확인하기)
 
 [Basic Section](https://pandas.pydata.org/pandas-docs/stable/basics.html#basics)을 참조하세요.
 
@@ -340,13 +355,13 @@ df.head()
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -414,13 +429,13 @@ df.tail(3)
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -521,13 +536,13 @@ df.describe()
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -618,13 +633,13 @@ df.T
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>2013-01-01 00:00:00</th>
       <th>2013-01-02 00:00:00</th>
@@ -697,13 +712,13 @@ df.sort_index(axis=1, ascending=False)
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>D</th>
       <th>C</th>
@@ -780,13 +795,13 @@ df.sort_values(by='B')
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -843,7 +858,7 @@ df.sort_values(by='B')
 
 
 
-## Selection (선택)
+## 3. Selection (선택)
 
 주석 (Note) : 선택과 설정을 위한 Python / Numpy의 표준화된 표현들이 직관적이며, 코드 작성을 위한 양방향 작업에 유용하지만 우리는 Pandas에 최적화된 데이터 접근 방법인 .at, .iat, .loc 및 .iloc 을 추천합니다.
 
@@ -891,13 +906,13 @@ df[0:3]
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -951,13 +966,13 @@ df['20130102':'20130104']
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -1035,13 +1050,13 @@ df.loc[:,['A','B']]
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -1104,13 +1119,13 @@ df.loc['20130102':'20130104', ['A','B']]
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -1216,12 +1231,8 @@ df.iloc[3:5,0:2]
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -1230,7 +1241,7 @@ df.iloc[3:5,0:2]
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -1265,12 +1276,8 @@ df.iloc[[1,2,4],[0,2]]
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -1279,7 +1286,7 @@ df.iloc[[1,2,4],[0,2]]
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>C</th>
@@ -1319,12 +1326,8 @@ df.iloc[1:3,:]
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -1333,7 +1336,7 @@ df.iloc[1:3,:]
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -1374,12 +1377,8 @@ df.iloc[:,1:3]
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -1388,7 +1387,7 @@ df.iloc[:,1:3]
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>B</th>
       <th>C</th>
@@ -1472,12 +1471,8 @@ df[df.A > 0]
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -1486,7 +1481,7 @@ df[df.A > 0]
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -1541,12 +1536,8 @@ df[df > 0]
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -1555,7 +1546,7 @@ df[df > 0]
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -1634,12 +1625,8 @@ df2
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -1648,7 +1635,7 @@ df2
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -1722,12 +1709,8 @@ df2[df2['E'].isin(['two','four'])]
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -1736,7 +1719,7 @@ df2[df2['E'].isin(['two','four'])]
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -1834,12 +1817,8 @@ df
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -1848,7 +1827,7 @@ df
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -1934,12 +1913,8 @@ df2
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -1948,7 +1923,7 @@ df2
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -2012,7 +1987,7 @@ df2
 
 
 
-## Missing Data (결측치)
+## 4. Missing Data (결측치)
 
 Pandas는 결측치를 표현하기 위해 주로 np.nan 값을 사용합니다. 이 방법은 기본 설정값이지만 계산에는 포함되지 않습니다. [Missing data section](https://pandas.pydata.org/pandas-docs/stable/missing_data.html#missing-data)을 참조하세요.
 
@@ -2046,13 +2021,13 @@ df1
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -2120,13 +2095,13 @@ df1.dropna(how='any')
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -2170,12 +2145,8 @@ df1.fillna(value=5)
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -2184,7 +2155,7 @@ df1.fillna(value=5)
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -2259,13 +2230,13 @@ pd.isna(df1)
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe th, .dataframe td {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -2313,7 +2284,7 @@ pd.isna(df1)
 
 
 
-## Operation (연산)
+## 5. Operation (연산)
 
 [이진 (Binary) 연산의 기본 섹션](https://pandas.pydata.org/pandas-docs/stable/basics.html#basics-binop)을 참조하세요.
 
@@ -2397,12 +2368,8 @@ df.sub(s, axis='index')
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -2411,7 +2378,7 @@ df.sub(s, axis='index')
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -2489,12 +2456,8 @@ df.apply(np.cumsum)
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -2503,7 +2466,7 @@ df.apply(np.cumsum)
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -2666,7 +2629,7 @@ s.str.lower()
 
 
 
-## Merge (병합)
+## 6. Merge (병합)
 
 ### Concat (연결)
 
@@ -2691,12 +2654,8 @@ df
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -2705,7 +2664,7 @@ df
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>0</th>
       <th>1</th>
@@ -2806,12 +2765,8 @@ pd.concat(pieces)
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -2820,7 +2775,7 @@ pd.concat(pieces)
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>0</th>
       <th>1</th>
@@ -2929,12 +2884,8 @@ left
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -2943,7 +2894,7 @@ left
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>key</th>
       <th>lval</th>
@@ -2976,12 +2927,8 @@ right
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -2990,7 +2937,7 @@ right
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>key</th>
       <th>rval</th>
@@ -3023,12 +2970,8 @@ pd.merge(left, right, on= 'key')
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3037,7 +2980,7 @@ pd.merge(left, right, on= 'key')
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>key</th>
       <th>lval</th>
@@ -3097,12 +3040,8 @@ left
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3111,7 +3050,7 @@ left
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>key</th>
       <th>lval</th>
@@ -3144,12 +3083,8 @@ right
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3158,7 +3093,7 @@ right
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>key</th>
       <th>rval</th>
@@ -3191,12 +3126,8 @@ pd.merge(left, right, on= 'key')
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3205,7 +3136,7 @@ pd.merge(left, right, on= 'key')
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>key</th>
       <th>lval</th>
@@ -3250,12 +3181,8 @@ df
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3264,7 +3191,7 @@ df
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -3350,12 +3277,8 @@ df.append(s, ignore_index=True)
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3364,7 +3287,7 @@ df.append(s, ignore_index=True)
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -3442,7 +3365,7 @@ df.append(s, ignore_index=True)
 
 
 
-## Grouping (그룹화)
+## 7. Grouping (그룹화)
 
 그룹화는 다음 단계 중 하나 이상을 포함하는 과정을 가리킵니다.
 
@@ -3473,12 +3396,8 @@ df
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3487,7 +3406,7 @@ df
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -3570,12 +3489,8 @@ df.groupby('A').sum()
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3584,7 +3499,7 @@ df.groupby('A').sum()
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>C</th>
       <th>D</th>
@@ -3624,12 +3539,8 @@ df.groupby(['A','B']).sum()
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3638,23 +3549,62 @@ df.groupby(['A','B']).sum()
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th></th>
+      <th>C</th>
+      <th>D</th>
     </tr>
     <tr>
       <th>A</th>
       <th>B</th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <th>bar</th>
+      <th>one</th>
+      <td>-1.814470</td>
+      <td>2.395985</td>
+    </tr>
+    <tr>
+      <th></th>
+      <th>three</th>
+      <td>-0.595447</td>
+      <td>0.166599</td>
+    </tr>
+    <tr>
+      <th></th>
+      <th>two</th>
+      <td>-0.392670</td>
+      <td>-0.136473</td>
+    </tr>
+    <tr>
+      <th>foo</th>
+      <th>one</th>
+      <td>-1.195665</td>
+      <td>-0.616981</td>
+    </tr>
+    <tr>
+      <th></th>
+      <th>three</th>
+      <td>1.928123</td>
+      <td>-1.623033</td>
+    </tr>
+    <tr>
+      <th></th>
+      <th>two</th>
+      <td>2.414034</td>
+      <td>1.600434</td>
+    </tr>
   </tbody>
 </table>
 </div>
 
 
-
-## Reshaping (변형)
+## 8. Reshaping (변형)
 
 [계층적 인덱싱](https://pandas.pydata.org/pandas-docs/stable/advanced.html#advanced-hierarchical) 및 [변형](https://pandas.pydata.org/pandas-docs/stable/reshaping.html#reshaping-stacking) 부분을 참조하세요.
 
@@ -3693,12 +3643,8 @@ df2
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3707,7 +3653,7 @@ df2
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th></th>
       <th>A</th>
@@ -3789,12 +3735,8 @@ stacked.unstack()
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3803,7 +3745,7 @@ stacked.unstack()
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th></th>
       <th>A</th>
@@ -3855,12 +3797,8 @@ stacked.unstack(1)
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3869,7 +3807,7 @@ stacked.unstack(1)
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>second</th>
       <th>one</th>
@@ -3921,12 +3859,8 @@ stacked.unstack(0)
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -3935,7 +3869,7 @@ stacked.unstack(0)
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>first</th>
       <th>bar</th>
@@ -4000,12 +3934,8 @@ df
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -4014,7 +3944,7 @@ df
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -4138,12 +4068,8 @@ pd.pivot_table(df, values='D', index=['A', 'B'], columns=['C'])
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -4152,7 +4078,7 @@ pd.pivot_table(df, values='D', index=['A', 'B'], columns=['C'])
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>C</th>
       <th>bar</th>
@@ -4220,7 +4146,7 @@ pd.pivot_table(df, values='D', index=['A', 'B'], columns=['C'])
 
 
 
-## Time Series (시계열)
+## 9. Time Series (시계열)
 
 Pandas는 자주 일어나는 변환 (예시 : 5분마다 일어나는 데이터에 대한 2차 데이터 변환) 사이에 수행하는 리샘플링 연산을 위한 간단하고, 강력하며, 효율적인 함수를 제공합니다. 이는 재무 (금융) 응용에서 매우 일반적이지만 이에 국한되지는 않습니다. [시계열](https://pandas.pydata.org/pandas-docs/stable/timeseries.html#timeseries) 부분을 참고하세요.
 
@@ -4419,7 +4345,7 @@ ts.head()
 
 
 
-## Categoricals (범주화)
+## 10. Categoricals (범주화)
 
 Pandas는 데이터프레임 내에 범주형 데이터를 포함할 수 있습니다. [범주형 소개](https://pandas.pydata.org/pandas-docs/stable/categorical.html#categorical) 와 [API 문서](https://pandas.pydata.org/pandas-docs/stable/api.html#api-categorical) 부분을 참조하세요.
 
@@ -4501,12 +4427,8 @@ df.sort_values(by="grade")
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -4515,7 +4437,7 @@ df.sort_values(by="grade")
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>id</th>
       <th>raw_grade</th>
@@ -4585,7 +4507,7 @@ df.groupby("grade").size()
 
 
 
-## Plotting
+## 11. Plotting (그래프)
 
 [Plotting](https://pandas.pydata.org/pandas-docs/stable/visualization.html#visualization) 부분을 참조하세요.
 
@@ -4636,7 +4558,7 @@ plt.figure(); df.plot(); plt.legend(loc='best')
 
 
 
-## Getting Data In / Out (데이터 입 / 출력)
+## 12. Getting Data In / Out (데이터 입 / 출력)
 
 ### CSV
 
@@ -4659,12 +4581,8 @@ pd.read_csv('foo.csv')
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -4673,7 +4591,7 @@ pd.read_csv('foo.csv')
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>Unnamed: 0</th>
       <th>A</th>
@@ -5201,12 +5119,8 @@ pd.read_hdf('foo.h5','df')
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -5215,7 +5129,7 @@ pd.read_hdf('foo.h5','df')
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -5681,12 +5595,8 @@ pd.read_excel('foo.xlsx', 'Sheet1', index_col=None, na_values=['NA'])
 
 <div>
 <style>
-    .dataframe thead tr:only-child th {
+    .dataframe th, .dataframe td {
         text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
     }
 
     .dataframe tbody tr th {
@@ -5695,7 +5605,7 @@ pd.read_excel('foo.xlsx', 'Sheet1', index_col=None, na_values=['NA'])
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>A</th>
       <th>B</th>
@@ -6138,10 +6048,9 @@ pd.read_excel('foo.xlsx', 'Sheet1', index_col=None, na_values=['NA'])
 
 
 
-## Gotchas (잡았다!)
+## 13. Gotchas (잡았다!)
 
-연산을 수행하기 위해 시도하면 다음과 같은 예외 상황을 볼 수도 있습니다.
-
+연산 수행 시 다음과 같은 예외 상황을 볼 수도 있습니다.
 
 ```python
 if pd.Series([False, True, False]):
@@ -6177,7 +6086,7 @@ if pd.Series([False, True, False])is not None:
       print("I was not None")
 ```
 
-설명과 무엇을 해야하는지에 대해서는 [비교](https://pandas.pydata.org/pandas-docs/stable/basics.html#basics-compare) 부분을 참조하세요.
+위에 대한 설명과 자세한 내용은 [비교](https://pandas.pydata.org/pandas-docs/stable/basics.html#basics-compare) 부분을 참조하세요.
 
 [Gotchas](https://pandas.pydata.org/pandas-docs/stable/gotchas.html#gotchas) 부분도 참조하세요.
 
