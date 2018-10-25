@@ -6094,6 +6094,6 @@ if pd.Series([False, True, False])is not None:
 
 본 자료의 저작권은 [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)인 점을 참조하여 주세요.
 
-This documentation is a Korean translation material of '10 Minutes to Pandas'. Every members of DATAITGIRLS2 program participated in the translation. If you want to know about DATAITGIRLS2 program, please visit [DATAITGIRLS2 program's homepage](http://dataitgirls2.pagedemo.co/).
+This documentation is a Korean translation material of '10 Minutes to Pandas'. Every members of DATAITGIRLS2 program participated in the translation. If you want to know about DATAITGIRLS2 program, please visit [DATAITGIRLS2 program's homepage](https://annefromk.github.io/dataitgirls2/).
 
 The copyright conditions of this documentation are BSD-3-Clause.
